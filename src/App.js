@@ -54,21 +54,21 @@ function App() {
         </p>
       </Jumbotron>
       <Row className="justify-content-center">
-      {clima &&  
-        <Card bg="primary" className="text-center">
-          <Card.Header>
-            <h2>{clima.name}</h2>
-            <h3>{clima.main.temp}&#x2103;</h3>
-            <h5>min: {clima.main.temp_min} máx: {clima.main.temp_max}</h5>
-          </Card.Header>
-          <Card.Body>
-            <Card.Title>Previsão do Tempo</Card.Title>
-          </Card.Body>
-          <Card.Footer className="text-white">
-            Atualizado em:
+        {clima &&
+          <Card bg="primary" className="text-center">
+            <Card.Header>
+              <h2>{clima.name}</h2>
+              <h3>{clima.main.temp}&#x2103;</h3>
+              <h5>min: {clima.main.temp_min} máx: {clima.main.temp_max}</h5>
+            </Card.Header>
+            <Card.Body>
+              <Card.Title>Previsão do Tempo</Card.Title>
+            </Card.Body>
+            <Card.Footer className="text-white">
+              Atualizado em:
           </Card.Footer>
-        </Card>
-      } 
+          </Card>
+        }
       </Row>
     </>
   )
